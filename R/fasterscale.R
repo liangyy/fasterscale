@@ -16,5 +16,6 @@ scale_faster = function (x) {
   b <- matrixStats::colSds(x)
   x <- t(t(x) - a)
   x <- t(t(x) / b)
+  cat('Done')
   return(x)
 }

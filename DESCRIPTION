@@ -6,8 +6,9 @@ Date: 2020-01-22
 Title: Methods for Efficiently Centering and Scaling Matrices
 Description: Provides a fast and memory-efficient method for centering and scaling matrices.
 URL: https://github.com/liangyy/fasterscale
-Author@R: person("Yanyu", "Liang",role=c("cre","aut"), 
+Author@R: person("Yanyu","Liang",role=c("cre","aut"), 
                  email="yanyul@uchicago.edu")
 License: MIT + file LICENSE
 Imports: matrixStats
+Suggests: testthat
 RoxygenNote: 7.0.2

@@ -10,3 +10,4 @@ Author@R: person("Yanyu", "Liang",role=c("cre","aut"),
                  email="yanyul@uchicago.edu")
 License: MIT + file LICENSE
 Imports: matrixStats
+RoxygenNote: 7.0.2

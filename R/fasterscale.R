@@ -11,13 +11,17 @@
 #' and they are also scaled to have standard deviation of 1. 
 #'
 #' @importFrom matrixStats colSds
+#' @importFrom Rcpp evalCpp
+#'
+#' @useDynLib fasterscale
 #'
 #' @export 
 scale_faster = function (x) {
   a <- colMeans(x)
   b <- colSds(x)
-  x <- t(t(x) - a)
-  x <- t(t(x) / b)
+  # x <- t(t(x) - a)
+  # x <- t(t(x) / b)
+  scale_rcpp(x, a, b)
   cat('Done')
   return(x)
 }

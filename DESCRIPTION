@@ -9,6 +9,11 @@ URL: https://github.com/liangyy/fasterscale
 Authors@R: person("Yanyu","Liang",role=c("cre","aut"), 
                  email="yanyul@uchicago.edu")
 License: MIT + file LICENSE
-Imports: matrixStats
-Suggests: testthat
+Imports: 
+  matrixStats,
+  Rcpp (>= 1.0.3)
+Suggests: 
+  testthat
 RoxygenNote: 7.0.2
+LinkingTo: Rcpp
+NeedsCompilation: yes
